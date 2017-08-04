@@ -4,5 +4,8 @@ gem 'rake'
 gem 'sequel'
 gem 'sqlite3'
 
-gem 'minitest'
-gem 'pry'
+group :test do
+  gem 'minitest'
+  gem 'database_cleaner'
+  gem 'pry'
+end

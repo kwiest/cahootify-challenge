@@ -1,19 +1,19 @@
 require 'sequel'
 
+DB = Sequel.sqlite
+DB.create_table :users do
+  primary_key :id
+  String :name
+  String :email_address, unique: true
+  String :telephone_number
+  String :website
+  Datetime :created_at
+end
+
 class UserDatabase
-  DB = Sequel.sqlite
   attr_reader :collection
 
   def initialize(collection)
-    DB.create_table :users do
-      primary_key :id
-      String :name
-      String :email_address
-      String :telephone_number
-      String :website
-      Datetime :created_at
-    end
-
     @collection = collection
   end
 

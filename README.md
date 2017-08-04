@@ -5,7 +5,7 @@
 - [x] Import CSV file
 - [x] Write CSV rows to database
 - [x] Rows without a name or email should not be imported
-- [ ] Email addresses should be unique across records
+- [x] Email addresses should be unique across records
 
 ## Test suite
 
