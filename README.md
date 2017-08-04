@@ -2,7 +2,7 @@
 
 ## Rules
 
-- [ ] Import CSV file
+- [x] Import CSV file
 - [ ] Write CSV rows to database
 - [x] Rows without a name or email should not be imported
 - [ ] Email addresses should be unique across records

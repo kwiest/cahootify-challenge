@@ -5,7 +5,7 @@ class UserTest < Minitest::Test
   def setup
     @attributes = {
       name: "Kyle Wiest",
-      email: "kyle.wiest@gmail.com",
+      email_address: "kyle.wiest@gmail.com",
       telephone_number: "+1 123-456-7890",
       website: "https://ecommerceonrails.com"
     }
@@ -25,8 +25,8 @@ class UserTest < Minitest::Test
     end
   end
 
-  def test_email_required
-    @attributes.delete :email
+  def test_email_address_required
+    @attributes.delete :email_address
 
     assert_raises ArgumentError do
       user = User.new @attributes
