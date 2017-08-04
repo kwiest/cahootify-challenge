@@ -10,4 +10,13 @@ class User
     @telephone_number = telephone_number
     @website = website
   end
+
+  def to_h
+    {
+      name: name,
+      email_address: email_address,
+      telephone_number: telephone_number,
+      website: website
+    }
+  end
 end

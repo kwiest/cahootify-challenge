@@ -32,4 +32,8 @@ class UserTest < Minitest::Test
       user = User.new @attributes
     end
   end
+
+  def test_to_h
+    assert_equal @attributes, User.new(@attributes).to_h
+  end
 end
